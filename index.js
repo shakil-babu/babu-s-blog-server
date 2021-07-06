@@ -87,7 +87,7 @@ app.get('/readAdmins', (req, res) => {
 
 
 // ==================================== Comments
-//   insert message into database
+//   insert comment into database
 app.post("/addComment", (req, res) => {
     const data = req.body;
     commentssCollection.insertOne(data)
